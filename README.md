@@ -22,7 +22,7 @@ samtools quickcheck merged.bam; samtools sort -o merged.sorted.bam merged.bam; s
 
 modkit pileup merged.sorted.bam pileup_mod.bed
 
-5. remane your bam file in a special format which our script recognizes as input. That format must be something like xxNN, where xx are any 2 alphabetical non numerical characters, and NN are 2 numerical digits representing the age of the dample donor. If the sample is from a 76 years old person, rename that as xx76.bam:
+5. remane your bam file in a special format which our script recognizes as input. That format must be something like xxNN, where xx are any 2 alphabetical non numerical characters, and NN are 2 numerical digits representing the age of the sample donor. If the sample is from a 76 years old person, rename that as xx76.bam:
 mv merged.sorted.bam xx76.bam
 
 6. do points 1-5 for all your samples
