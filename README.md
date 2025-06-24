@@ -18,11 +18,11 @@ samtools merge merged.bam basecalling/pass/*.bam
 
 samtools quickcheck merged.bam; samtools sort -o merged.sorted.bam merged.bam; samtools index merged.sorted.bam
 
-4. do pileup with modkit:
+4. do pileup with modkit, make sure you have teh fasta reference file (.fna)+ index (.fai) files in the current folder or use full path:
 
-modkit pileup merged.sorted.bam pileup_mod.bed
+modkit pileup merged.sorted.bam pileup_mod.bed --cpg --combine-strands --ref GCA_000001405.15_GRCh38_no_alt_analysis_set.fna
 
-5. remane your bam file in a special format which our script recognizes as input. That format must be something like xxNN, where xx are any 2 alphabetical non numerical characters, and NN are 2 numerical digits representing the age of the sample donor. If the sample is from a 76 years old person, rename that as xx76.bam:
+5. rename your bam file in a special format which our script recognizes as input. That format must be something like xxNN, where xx are any 2 alphabetical non numerical characters, and NN are 2 numerical digits representing the age of the sample donor. If the sample is from a 76 years old person, rename that as xx76.bam:
 mv merged.sorted.bam xx76.bam
 
 6. do points 1-5 for all your samples
