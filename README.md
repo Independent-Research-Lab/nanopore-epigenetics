@@ -31,7 +31,7 @@ mv merged.sorted.bam xx76.bam
 for convenience and reproducibility we included our .bam files in the link below.
 8. Due to limitations on file size, our data can not be uploaded on github. It is available on the link below instead, as complete content of R working directory: 
 
-http://gofile.me/76Mv5/SouU9862s
+http://gofile.me/76Mv5/irFIggw48
 
 
 #To support our research work, feel free to donate any amount here:
